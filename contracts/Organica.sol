@@ -10,7 +10,7 @@ contract GameItems is ERC1155 {
 	uint256 public constant THORS_HAMMER = 2;
 	uint256 public constant SWORD = 3;
 	uint256 public constant SHIELD = 4;
-
+	// Example from OpenZepp: https://docs.openzeppelin.com/contracts/3.x/erc1155
 	constructor() public ERC1155("https://game.example/api/item/{id}.json") {
 		_mint(msg.sender, GOLD, 10**18, "");
 		_mint(msg.sender, SILVER, 10**27, "");
